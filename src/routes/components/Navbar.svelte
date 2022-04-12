@@ -4,10 +4,11 @@
 
 <header class="header" id="header">
     <nav class="nav">
-        <button type="button" class="icon-button nav__toggle" id="nav-toggle" on:click="{_ => open = true}">
+        <button name="toggle-menu" type="button" class="icon-button nav__toggle" id="nav-toggle" on:click="{_ => open = true}">
             <img src="images/icon-menu.svg" alt="">
         </button>
-        <div class="nav__menu_container" class:nav__menu_container-open={open} on:click="{_ => open = false}">
+        <img src="images/logo.svg" class="nav__logo" alt="logo">
+        <div class="nav__menu_container" class:nav__menu_container-open={open} on:click|self="{_ => open = false}">
             <div class="nav__menu"  id="nav-menu">
                 <button class="icon-button nav__close" id="nav-close" on:click="{_ => open = false}">
                     <img src="images/icon-close.svg" alt="close">
@@ -21,8 +22,6 @@
                 </ul>
             </div>
         </div>
-  
-        <img src="images/logo.svg" class="nav__logo" alt="logo">
         <div class="nav__user">
             <img src="images/icon-cart.svg" alt="shopping cart">
             <img src="images/image-avatar.png" alt="user">
