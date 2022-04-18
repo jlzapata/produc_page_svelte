@@ -6,6 +6,5 @@
 </script>
 
 <Navbar />
-<main class="main">
-	<slot />
-</main>
+
+<slot />

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import CloseButton from './CloseButton.svelte';
+
 	import Cart from './Cart.svelte';
 
 	import CartNotification from './CartNotification.svelte';
@@ -25,9 +27,7 @@
 			on:click|self={(_) => (open = false)}
 		>
 			<div class="nav__menu" id="nav-menu">
-				<button class="icon-button nav__close" id="nav-close" on:click={(_) => (open = false)}>
-					<img src="images/icon-close.svg" alt="close" />
-				</button>
+				<CloseButton class="nav__close" on:click={(_) => (open = false)} />
 				<ul class="nav__list">
 					<li class="nav__item"><a class="nav__item-text" href="/">Collections</a></li>
 					<li class="nav__item"><a class="nav__item-text" href="/">Men</a></li>
@@ -39,7 +39,7 @@
 		</div>
 		<div class="nav__user">
 			<CartNotification on:click={() => (cartOpen = !cartOpen)} />
-			<img src="images/image-avatar.png" alt="user" />
+			<img class="user-thumbnail" src="images/image-avatar.png" alt="user" />
 		</div>
 	</nav>
 </header>

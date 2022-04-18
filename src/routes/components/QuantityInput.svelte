@@ -50,7 +50,6 @@
 		border-radius: 10px;
 		position: relative;
 		padding: 1em;
-		margin-bottom: var(--mb-1);
 	}
 
 	.quantity__input,
@@ -70,5 +69,12 @@
 
 	.quantity__input {
 		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) {
+		.quantity {
+			margin: 0;
+			min-width: 180px;
+		}
 	}
 </style>
