@@ -340,7 +340,7 @@ main {
 	}
 
 	.nav__item-text::after{
-		bottom: -30px;
+		bottom: -2.4rem;
 	}
 
 	.cart__container{
