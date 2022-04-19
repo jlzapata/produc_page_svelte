@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 :root {
-	--header-height: 5rem;
+	--header-height: 6rem;
 
 	/* Colors */
 	--primary-color: hsl(26, 100%, 55%);
@@ -162,7 +162,9 @@ main {
 }
 
 @media screen and (max-width: 767px) {
-
+	:root{
+		--header-height: 4rem;
+	}
 
 	.nav__menu {
 		width: 70%;
@@ -344,5 +346,9 @@ main {
 	.cart__container{
 		width: 450px;
 		right: 0;
+	}
+
+	.item__swiper{
+		border-radius: 4%;
 	}
 }

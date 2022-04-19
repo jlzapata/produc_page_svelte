@@ -133,7 +133,6 @@
 		}
 
 		.item__image {
-			border-radius: 4%;
 			cursor: pointer;
 		}
 
